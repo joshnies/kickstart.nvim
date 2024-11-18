@@ -783,10 +783,24 @@ require('lazy').setup({
       vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
       vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
       vim.api.nvim_set_hl(0, 'NormalNC', { bg = 'none' })
+      vim.api.nvim_set_hl(0, 'SignColumn', { bg = 'none' })
+      vim.api.nvim_set_hl(0, 'WinSeparator', { fg = '#333333', bg = 'none' })
 
       -- Other
       vim.api.nvim_set_hl(0, 'Comment', { fg = '#7c7c7c' })
       vim.api.nvim_set_hl(0, 'LineNr', { fg = '#7c7c7c', bg = 'none' })
+
+      -- neo-tree
+      vim.api.nvim_set_hl(0, 'NeoTreeDirectoryIcon', { fg = '#BF95FF' })
+      vim.api.nvim_set_hl(0, 'NeoTreeDirectoryName', { fg = '#BF95FF' })
+      vim.api.nvim_set_hl(0, 'NeoTreeFadeText1', { fg = '#7c7c7c' })
+      vim.api.nvim_set_hl(0, 'NeoTreeFadeText2', { fg = '#7c7c7c' })
+      vim.api.nvim_set_hl(0, 'NeoTreeFileIcon', { fg = '#B3B3B3' })
+      vim.api.nvim_set_hl(0, 'NeoTreeGitDeleted', { fg = '#EE5396' })
+      vim.api.nvim_set_hl(0, 'NeoTreeGitModified', { fg = '#FF7EB6' })
+      vim.api.nvim_set_hl(0, 'NeoTreeGitUnstaged', { fg = '#FF7EB6' })
+      vim.api.nvim_set_hl(0, 'NeoTreeGitUntracked', { fg = '#FF7EB6' })
+      vim.api.nvim_set_hl(0, 'NeoTreeSymbolicLinkTarget', { fg = '#FF7EB6' })
 
       vim.cmd.hi 'Comment gui=none' -- Configure highlights
     end,
