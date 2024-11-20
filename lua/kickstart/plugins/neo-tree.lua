@@ -13,6 +13,12 @@ return {
   keys = {
     { '\\', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
   },
+  init = function()
+    -- Replace netrw with neo-tree
+    if vim.fn.argc() == 1 and vim.fn.isdirectory(vim.fn.argv(0)) == 1 then
+      require 'neo-tree'
+    end
+  end,
   opts = {
     close_if_last_window = true,
     filesystem = {
